@@ -3,13 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cec</groupId>
-    <artifactId>restapi</artifactId>
+    <artifactId>api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>restapi</name>
+    <name>api</name>
 
     <properties>
+        <projectName>api</projectName>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -58,7 +59,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warName>restapi</warName>
+                    <warName>${projectName}</warName>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
