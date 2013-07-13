@@ -36,7 +36,7 @@ public class ProfileController {
 			HttpServletRequest req, 
 			HttpServletResponse res){
 
-        return "HELLO JPA!";
+        return "HELLO!";
 		
 	}    
     
